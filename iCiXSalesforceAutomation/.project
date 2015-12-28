@@ -20,4 +20,21 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/main/java/utils/ConfigPropertyProvider.java</name>
+			<type>1</type>
+			<location>/Users/sukhwinders/Desktop/28Dec2015Automation/ConfigPropertyProvider.java</location>
+		</link>
+		<link>
+			<name>src/main/java/utils/generalUtils.java</name>
+			<type>1</type>
+			<location>/Users/sukhwinders/Desktop/28Dec2015Automation/generalUtils.java</location>
+		</link>
+		<link>
+			<name>src/main/java/utils/seleniumUtils.java</name>
+			<type>1</type>
+			<location>/Users/sukhwinders/Desktop/28Dec2015Automation/seleniumUtils.java</location>
+		</link>
+	</linkedResources>
 </projectDescription>
