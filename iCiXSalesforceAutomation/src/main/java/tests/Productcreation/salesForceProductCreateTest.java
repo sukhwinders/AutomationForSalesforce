@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import pageObjects.IdTypePageObject;
+//import pageObjects.IdTypePageObject;
 import pageObjects.SalesForceProductCreation;
 import utils.generalUtils;
 import utils.seleniumUtils;
