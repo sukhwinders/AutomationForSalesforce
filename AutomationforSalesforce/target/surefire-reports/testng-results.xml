@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="utilis.TestBase" duration-ms="5" started-at="2015-12-29T12:18:05Z" finished-at="2015-12-29T12:18:05Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="5" started-at="2015-12-29T12:18:05Z" finished-at="2015-12-29T12:18:05Z">
+      <class name="utilis.TestBase">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:utilis.TestBase@4a72add8]" name="setUp" is-config="true" duration-ms="11885" started-at="2015-12-29T17:47:54Z" finished-at="2015-12-29T17:48:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:utilis.TestBase@4a72add8]" name="tearDown" is-config="true" duration-ms="94" started-at="2015-12-29T17:48:06Z" finished-at="2015-12-29T17:48:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- utilis.TestBase -->
+    </test> <!-- Command line test -->
+  </suite> <!-- utilis.TestBase -->
+</testng-results>
