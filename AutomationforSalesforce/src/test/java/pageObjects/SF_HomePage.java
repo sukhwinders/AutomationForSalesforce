@@ -23,7 +23,8 @@ public class SF_HomePage {
 	   WebElement salesForce_profile_icon;
 	   
 	 //Salesforce elements after switching to the Lighting mode.
-	   @FindBy(xpath="//*[@id='oneHeader']/div[2]/div[3]/a[1]")
+	   //@FindBy(xpath="//*[@id='oneHeader']/div[2]/div[3]/a[1]")
+	   @FindBy(xpath="//*[@alt='App Launcher']")
 	   WebElement salesForce_applauncher;
 	   
 	 //Salesforce elements after switching to the Lighting mode.

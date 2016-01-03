@@ -22,19 +22,20 @@ public class TestBase {
 	   protected SF_HomePage sf_homepage;
 	   protected SF_Create_Product_page sf_create_product_page;
 
-	   @BeforeMethod
+	   //@BeforeMethod
 @BeforeSuite
    public void setUp() {
          baseUrl = "https://login.salesforce.com/";
          driver = new FirefoxDriver();
          driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
          driver.manage().window().maximize();
+         driver.get(baseUrl);
 
    }
-@AfterMethod
+//@AfterMethod
 @AfterSuite
    public void tearDown() throws Exception {
-         driver.quit();
+         //driver.quit();
    }
 }
 

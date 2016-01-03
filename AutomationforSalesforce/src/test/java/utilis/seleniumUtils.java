@@ -1,6 +1,7 @@
 package utilis;
 
 import java.util.Iterator;
+
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -8,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+//import org.openqa.selenium.Keys;
 
 public class seleniumUtils {
 	 String DATE_FORMAT_NOW = "yyyy-MM-dd HH:mm:ss";
@@ -140,5 +143,18 @@ public class seleniumUtils {
 	     	locatorId = driver.findElement(By.xpath("//label[text()='" + labelText + "']")).getAttribute("for");  
 	     	return locatorId;
 	    }
-
+	    
+	    /*public void ZoomIn() throws Throwable{
+	    	
+	    	if(System.getProperty("os.name").toLowerCase().contains("win")){
+	    		for(int i=0; i<2; i++){
+	                driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL, Keys.SUBTRACT));
+	            }
+	    	}
+	    	else if(System.getProperty("os.name").toLowerCase().contains("mac")){
+	    		for(int i=0; i<2; i++){
+	                driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.COMMAND, Keys.SUBTRACT));
+	            }
+	    	}	    	
+	    }*/
 }

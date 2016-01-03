@@ -40,7 +40,7 @@ public class sfCreateProduct extends TestBase{
 	
 	
 	
-	 driver.get(baseUrl);
+	 //driver.get(baseUrl);
 	 sf_homepage.entercredentials("sdqa01rk@sd.com", "Test@123");
 	 sf_homepage.LoginSF();
 	  if(isElementPresent(driver, By.xpath("/html/body/div[1]/div[1]/table/tbody/tr/td[3]/div/div[2]/div/div/div[1]/span"))){
