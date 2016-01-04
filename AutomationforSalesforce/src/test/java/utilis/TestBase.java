@@ -19,8 +19,8 @@ public class TestBase {
 	
 	  protected static WebDriver driver;
 	   protected String baseUrl;
-	   protected SF_HomePage sf_homepage;
-	   protected SF_Create_Product_page sf_create_product_page;
+	   //protected SF_HomePage sf_homepage;
+	   //protected SF_Create_Product_page sf_create_product_page;
 
 	   //@BeforeMethod
 @BeforeSuite

@@ -18,10 +18,6 @@ import utilis.TestBase;
 
 public class sfCreateProduct extends TestBase{
 
-	@BeforeTest
-	public void testset() throws Exception{
-		System.out.println("Testing sfcreate product");
-	}
 	
 	@Test
 	public void testPageObject() throws Exception {
@@ -35,14 +31,14 @@ public class sfCreateProduct extends TestBase{
 //	    salesloginpage.setUserName(obj.getProperty("strUserName"));
 //	    salesloginpage.setPassword(obj.getProperty("strPassword"));
 		
-	sf_homepage = PageFactory.initElements(driver, SF_HomePage.class);
-	sf_create_product_page = PageFactory.initElements(driver, SF_Create_Product_page.class);
+		SF_HomePage sf_homepage = new SF_HomePage(driver);
+		SF_Create_Product_page sf_create_product_page = new SF_Create_Product_page(driver);
 	
 	
 	
-	 //driver.get(baseUrl);
+	 driver.get(baseUrl);
 	 sf_homepage.entercredentials("sdqa01rk@sd.com", "Test@123");
-	 sf_homepage.LoginSF();
+	 //sf_homepage.LoginSF();
 	  if(isElementPresent(driver, By.xpath("/html/body/div[1]/div[1]/table/tbody/tr/td[3]/div/div[2]/div/div/div[1]/span"))){
 	       driver.findElement(By.id("userNavLabel")).click();
 	        driver.findElement(By.xpath("//a[text()='Switch to Lightning Experience']")).click();
@@ -58,7 +54,7 @@ public class sfCreateProduct extends TestBase{
 	        }
 	        }
 	        
-	  sf_homepage.Applaunchericon();
+	  sf_create_product_page.Applaunchericon();
 	  //sf_homepage.LogoutSF(); 
 	  System.out.println("User has clicked App launcher icon and redirected to respective page");
 	  Thread.sleep(5000);
@@ -69,7 +65,7 @@ public class sfCreateProduct extends TestBase{
 	  sf_create_product_page.sf_ICIXProducts_button_click();
 	  Thread.sleep(500);
 	  sf_create_product_page.sf_ICIXProducts_Details();
-	  sf_create_product_page.sf_ICIXProducts_Create_click();
+	 // sf_create_product_page.sf_ICIXProducts_Create_click();
 	  Thread.sleep(2000);
 	}
 	        public static boolean isElementPresent(WebDriver driver, By bydriver)
